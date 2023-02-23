@@ -208,11 +208,18 @@ body {
     padding: 10px 20px;
     display: flex;
     column-gap: 20px;
+    overflow-x:hidden ;
 }
 .card{
     border: 1px solid red;
     padding: 15px 20px;
     border-radius: 5px;
+}
+.card-top{
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-body{
     padding: 10px 0px;
@@ -222,7 +229,9 @@ body {
     row-gap: 10px;
 }
 
-
+.mrg-img{
+    height: 100%;
+}
 
 
 
@@ -240,6 +249,12 @@ body {
     .nav-right {
         margin-right: 0;
         justify-content: center;
+    }
+    .mrg-div{
+        display: none;
+    }
+    .first-row{
+        grid-template-columns: 1fr;
     }
 }
 
