@@ -243,7 +243,7 @@ body {
     border-radius: 5px;
     flex-grow: 0;
     flex-shrink: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .card-top {
@@ -401,6 +401,7 @@ body {
         flex-wrap: wrap;
         column-gap: 8px;
         row-gap: 8px;
+        justify-content: space-around;
     }
     .card-top {
         height: 116px;
@@ -417,4 +418,18 @@ body {
      .card-txt{
         font-size: 10px;
     }
+}
+
+@media only screen and (max-width: 380px) {
+    .navbar {
+        grid-template-columns: 1fr;
+    }
+    .nav-right {
+        margin-right: 10px;
+        column-gap: 20px;
+        margin-left: 10px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
 }
