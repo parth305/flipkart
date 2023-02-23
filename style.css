@@ -155,11 +155,12 @@ body {
 }
 
 .container {
-    margin: 25px 80px;
+    margin: 20px 80px;
 }
 
 .card-container {
     background-color: white;
+    overflow-x: hidden;
 }
 
 .flipkart-timer {
@@ -200,20 +201,23 @@ body {
     font-weight: bold;
     text-decoration: none;
     padding: 10px 30px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
 .card-container-bottom{
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: flex;
-    column-gap: 20px;
+    column-gap: 15px;
     overflow-x:hidden ;
 }
 .card{
-    border: 1px solid red;
-    padding: 15px 20px;
+    /* border: 1px solid red; */
+    padding: 5px 20px;
     border-radius: 5px;
+    /* min-width: 221px; */
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 .card-top{
     height: 186px;
@@ -229,10 +233,26 @@ body {
     row-gap: 10px;
 }
 
+.card-offer{
+    color: rgba(117, 163, 47, 0.836);
+}
+
+.card-txt{
+    color: grey;
+}
+
 .mrg-img{
     height: 100%;
 }
 
+
+/* -------------------------------second row----------------------------------------------- */
+
+
+.second-card-container-top-left h4 {
+    font-weight: 300;
+    color: grey;
+}
 
 
 @media only screen and (max-width: 1300px)  {
