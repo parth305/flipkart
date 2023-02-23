@@ -182,6 +182,7 @@ body {
     display: flex;
     column-gap: 20px;
     align-items: center;
+
 }
 
 .card-container-top-left span {
@@ -205,27 +206,54 @@ body {
 }
 
 
-.card-container-bottom{
+.card-container-bottom {
     padding: 0px 20px;
     display: flex;
     column-gap: 15px;
-    overflow-x:hidden ;
+    overflow-x: hidden;
+    position: relative;
 }
-.card{
-    /* border: 1px solid red; */
+
+.rigtharr {
+    transform: rotate(180deg);
+}
+
+.side-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100px;
+    font-size: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.side-arrow:hover {
+    cursor: pointer;
+}
+
+.card {
     padding: 5px 20px;
     border-radius: 5px;
-    /* min-width: 221px; */
     flex-grow: 0;
     flex-shrink: 0;
+    border: 1px solid red;
 }
-.card-top{
+
+.card-top {
     height: 186px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card-body{
+
+.card-body {
     padding: 10px 0px;
     text-align: center;
     display: flex;
@@ -233,15 +261,15 @@ body {
     row-gap: 10px;
 }
 
-.card-offer{
+.card-offer {
     color: rgba(117, 163, 47, 0.836);
 }
 
-.card-txt{
+.card-txt {
     color: grey;
 }
 
-.mrg-img{
+.mrg-img {
     height: 100%;
 }
 
@@ -255,7 +283,7 @@ body {
 }
 
 
-@media only screen and (max-width: 1300px)  {
+@media only screen and (max-width: 1300px) {
     .navbar {
         grid-template-columns: 1fr;
         padding: 10px 20px;
@@ -270,11 +298,17 @@ body {
         margin-right: 0;
         justify-content: center;
     }
-    .mrg-div{
+
+    .mrg-div {
         display: none;
     }
-    .first-row{
+
+    .first-row {
         grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: 20px 40px;
     }
 }
 
@@ -303,7 +337,7 @@ body {
         row-gap: 0px;
     }
 
-    .login{
+    .login {
         padding: 5px 30px;
     }
 
@@ -311,13 +345,76 @@ body {
         height: 15px;
         width: 50px;
     }
-    
+
     .logo-txt {
         font-size: 7px;
     }
-    
+
     .plus-icon {
         width: 7px;
         height: 7px;
+    }
+
+    .card-container-top-left h2 {
+        font-size: 18px;
+    }
+
+    .second-card-container-top-left h4 {
+        font-size: 14px;
+    }
+
+    .flipkart-timer {
+        width: 20px;
+        height: 20px;
+    }
+
+    .second-card-container-top-left h2 {
+        font-size: 18px;
+    }
+
+    .card-container-top-left {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .card-container-top-left span h3 {
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 15px 9px;
+    }
+
+    .view-all-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .side-arrow {
+        display: none;
+    }
+    .card {
+        padding: 5px 10px;
+    }
+
+    .card-container-bottom {
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+    .card-top {
+        height: 116px;
+    }
+    .card-top img{
+        height: 106px;
+    }
+    .card-title{
+        font-size: 13px;
+    }
+    .card-offer{
+        font-size:12px;
+    }
+     .card-txt{
+        font-size: 10px;
     }
 }
